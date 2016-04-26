@@ -3,7 +3,7 @@
 A simple repo containing some Android specific extension methods.
 
 ##Usage
-To use this these set of extension methods in your project, you need to locally build it with `./gradlew install`, so the artifact gets installed into your local maven repository.
+To use this these set of extension methods in your project, first, you need to clone this repository and then locally build it with `./gradlew install`.
 
 Once you are done with it, you can declare it as a dependency.
 
