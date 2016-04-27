@@ -1,1 +1,1 @@
-include ':kotlin-extensions-android'
+include ':kotlin-extensions-android', ':demo'
