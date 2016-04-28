@@ -5,9 +5,9 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 
-fun Context.broadcast(a: Intent.() -> Unit) {
+fun Context.broadcast(init: Intent.() -> Unit) {
     val intent = Intent();
-    intent.a()
+    intent.init()
     sendBroadcast(intent);
 }
 
