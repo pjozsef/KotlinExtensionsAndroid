@@ -6,17 +6,17 @@ import android.content.Intent
 import android.content.IntentFilter
 
 fun Context.broadcast(init: Intent.() -> Unit) {
-    val intent = Intent();
+    val intent = Intent()
     intent.init()
-    sendBroadcast(intent);
+    sendBroadcast(intent)
 }
 
 fun Context.registerReceiver(receiver: BroadcastReceiver, vararg actions: String) {
-    val filter = IntentFilter();
+    val filter = IntentFilter()
     actions.forEach {
         filter.addAction(it)
     }
-    registerReceiver(receiver, filter);
+    registerReceiver(receiver, filter)
 }
 
 class Receiver(val onReceiveCallback: (Context?, Intent?) -> Unit) : BroadcastReceiver() {
