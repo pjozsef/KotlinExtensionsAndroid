@@ -6,7 +6,7 @@ import android.content.Intent
 fun Context.startService(type: Class<*>, init: Intent.() -> Unit) {
     val intent = Intent(this, type);
     intent.init()
-    startService(intent);
+    startService(intent)
 }
 
 fun Context.startActivity(type:Class<*>, init: Intent.() -> Unit){
