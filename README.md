@@ -14,12 +14,13 @@ Maven:
   <groupId>com.github.pjozsef</groupId>
   <artifactId>kotlin-extensions-android</artifactId>
   <version>0.0.1</version>
+  <type>aar</type>
 </dependency>
 ```
 
 Gradle:
 ```groovy
-compile 'com.github.pjozsef:kotlin-extensions-android:0.0.1'
+compile 'com.github.pjozsef:kotlin-extensions-android:0.0.1@aar'
 ```
 ##Features
 To see how these extension methods could help you, take a look at the  [Demo.kt](https://github.com/pjozsef/KotlinExtensionsAndroid/blob/master/demo/src/main/kotlin/com/github/pjozsef/demo/Demo.kt) file.
